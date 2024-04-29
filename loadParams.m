@@ -6,7 +6,7 @@ addpath('kuka_iiwa');
 mdlName = 'KukaHexapod_Simulation';
 
 % Set Test ID
-TestID = 1;
+TestID = 2;
 
 endTime = 600;
 
@@ -20,10 +20,11 @@ if TestID == 1
     Kuka_mass_pct = 0.2;  % Percent contribution of Kuka arm to total mass
 
 elseif TestID == 2
-    % Test 2 is a sinusoidal motion of joints 3, 4, and 6 ursing a large chief base body
-    % Joint 3 moves with an amplitude of 115 deg and a period of 120 seconds
-    % Joint 4 moves with an amplitude of  45 deg and a period of  30 seconds
+    % Test 2 is a sinusoidal motion of joints 1, 2, and 6 ursing a large chief base body
+    % Joint 1 moves with an amplitude of 115 deg and a period of 120 seconds
+    % Joint 2 moves with an amplitude of  45 deg and a period of  30 seconds
     % Joint 6 moves with an amplitude of  30 deg and a period of  10 seconds
+
     BASE_TYPE = 1;  % 0 = Simple base plate
                     % 1 = Rectangular chief
 
