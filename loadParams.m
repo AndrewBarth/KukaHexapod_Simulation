@@ -6,7 +6,7 @@ addpath('kuka_iiwa');
 mdlName = 'KukaHexapod_Simulation';
 
 % Set Test ID
-TestID = 2;
+TestID = 1;
 
 endTime = 600;
 
@@ -29,7 +29,7 @@ elseif TestID == 2
     BASE_TYPE = 1;  % 0 = Simple base plate
                     % 1 = Rectangular chief
 
-    Kuka_mass_pct = 0.1;  % Percent contribution of Kuka arm to total mass
+    Kuka_mass_pct = 0.15;  % Percent contribution of Kuka arm to total mass
 end
 
 
