@@ -6,7 +6,7 @@ addpath('kuka_iiwa');
 mdlName = 'KukaHexapod_Simulation';
 
 % Set Test ID
-TestID = 3;
+TestID = 1;
 
 endTime = 600;
 
