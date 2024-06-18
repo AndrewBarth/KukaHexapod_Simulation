@@ -1,12 +1,12 @@
 
 % Path to kuka urdf and graphics
-addpath('kuka_iiwa');
+% addpath('kuka_iiwa');
 
 % Model Name
 mdlName = 'KukaHexapod_Simulation';
 
 % Set Test ID
-TestID = 1;
+TestID = 3;
 
 endTime = 600;
 
