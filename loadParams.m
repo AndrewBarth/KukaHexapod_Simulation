@@ -22,7 +22,7 @@ if TestID == 1
     MoveHexapod = 1; % Move the Hexapod for this test
 
 elseif TestID == 2
-    % Test 2 is a sinusoidal motion of joints 1, 2, 4, and 6 ursing a large chief base body
+    % Test 2 is a sinusoidal motion of joints 1, 2, 4, and 6 using a large chief base body
     % Joint 1 moves with an amplitude of 115 deg and a period of 120 seconds
     % Joint 2 moves with an amplitude of  45 deg and a period of  90 seconds
     % Joint 4 moves with an amplitude of  60 deg and a period of  30 seconds
@@ -37,15 +37,32 @@ elseif TestID == 2
 
 elseif TestID == 3
 
-    % Test 3 is a sinusoidal motion of joint 4 in the horizontal plane 
-    % Joint 2 fixed at +90, joint 3 fixed at +90
-    % Joint 4 moves with an amplitude of 30 deg and a period of 90 seconds
+    % Test 3 is a sinusoidal motion of joint 2 and 4 
+    % Joint 2 moves with an amplitude of 15 deg and a period of 20 seconds. It also has a +90 offset
+    % Joint 3 is fixed at +90
+    % Joint 4 moves with an amplitude of 30 deg and a period of 60 seconds
+    % Joint 7 is fixed at -90
     BASE_TYPE = 0;  % 0 = Simple base plate
                     % 1 = Rectangular chief
     
     Kuka_mass_pct = 0.2;  % Percent contribution of Kuka arm to total mass
 
     MoveHexapod = 0; % Don't move the Hexapod for this test
+
+    elseif TestID == 4
+
+    % Test 4 is a sinusoidal motion of joint 2 and 4, similar to test 3 but with smaller motion
+    % Joint 2 moves with an amplitude of 5 deg and a period of 20 seconds. It also has a +90 offset ,
+    % Joint 3 is fixed at +90
+    % Joint 4 moves with an amplitude of 15 deg and a period of 60 seconds
+    % Joint 7 is fixed at -90
+    BASE_TYPE = 0;  % 0 = Simple base plate
+                    % 1 = Rectangular chief
+    
+    Kuka_mass_pct = 0.2;  % Percent contribution of Kuka arm to total mass
+
+    % MoveHexapod = 0; % Don't move the Hexapod for this test
+    MoveHexapod = 1; % Move the Hexapod for this test
 end
 
 
